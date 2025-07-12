@@ -16,7 +16,7 @@ COPY requirements.txt /app/
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Copy the whole project code into the container
+# Copy the whole project code in the container
 COPY . /app/
 
 # Run collectstatic (if you use static files)
